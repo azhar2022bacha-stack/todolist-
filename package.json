@@ -1,0 +1,22 @@
+{
+  "name": "daymark-todo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run start:dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "start": "concurrently \"npm run start:prod --workspace backend\" \"npm run start --workspace frontend\"",
+    "build": "npm run build --workspace backend && npm run build --workspace frontend",
+    "lint": "npm run lint --workspace backend && npm run lint --workspace frontend",
+    "db:generate": "npm run prisma:generate --workspace backend",
+    "db:validate": "npm run prisma:validate --workspace backend",
+    "db:migrate": "npm run prisma:migrate --workspace backend",
+    "db:deploy": "npm run prisma:deploy --workspace backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
