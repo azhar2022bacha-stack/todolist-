@@ -77,8 +77,8 @@ h1, h2, h3, p { margin-top: 0; }
 .welcome-subtitle { margin: 0; color: #909a94; font-size: 12px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 36px; padding: 0 13px; border: 1px solid transparent; border-radius: 7px; font-size: 11px; font-weight: 600; transition: background .16s, border-color .16s, transform .16s; }
 .button:active { transform: translateY(1px); }
-.button-primary { background: #347455; color: #fff; box-shadow: 0 2px 4px #275d4418; }
-.button-primary:hover { background: #285d49; }
+.button-primary { background: #1e3a8a; color: #fff; box-shadow: 0 2px 4px #1e3a8a18; }
+.button-primary:hover { background: #172554; }
 .create-button { height: 38px; padding: 0 15px; font-size: 11px; }
 .button-outline { border-color: #e4e9e5; background: #fff; color: #55645b; }
 .button-outline:hover { border-color: #cbd9ce; background: #f9fbf9; }
